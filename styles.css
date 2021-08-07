@@ -56,3 +56,17 @@ a#discord {
 a#discord:hover {
     background-color: #4f5ce6;
 }
+
+@media only screen and (max-width: 500px) {
+    img {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
