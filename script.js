@@ -5,7 +5,7 @@ var distance = 1200000000;
 var check = false;
 var play = false;
 // Set the date we're counting down to
-var end = new Date(Date.UTC(2021, 07, 08, 18, 30, 00, 00)).getTime();
+var end = new Date(Date.UTC(2021, 07, 08, 12, 10, 00, 00)).getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
