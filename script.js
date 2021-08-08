@@ -17,10 +17,12 @@ var countdownfunction = setInterval(function() {
 
 
   if (distance <= 216000 && !play) {
-  	var ost = new Audio('music/ost.mp3');
+  	const ost = new Audio('music/ost.mp3');
   	ost.muted = true;
-  	window.onload = ost.play();
+  	document.body.addEventListener("mousemove", function () {
   	play = true;
+    audio.play()
+	})
   }
 
   // Get todays date and time
