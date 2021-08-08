@@ -16,7 +16,8 @@ var countdownfunction = setInterval(function() {
 
 
   if (distance <= 216000 && !play) {
-  	document.getElementById("music").innerHTML = "<audio autoplay>  <source src='ost.mp3' type='audio/mp3'> Your browser does not support the audio element. </audio>"
+  	document.getElementById("music").innerHTML = "<audio autoplay>  <source src='ost.mp3' type='audio/mp3'> Your browser does not support the audio element. </audio>";
+  	play = true;
   }
 
   // Get todays date and time
@@ -32,6 +33,7 @@ var countdownfunction = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   // If the count down is over, write some text 
+  console.log(distance);
   if (distance < 1) {
     clearInterval(countdownfunction);
     window.location.replace("https://www.twitch.tv/dyescapemc");
