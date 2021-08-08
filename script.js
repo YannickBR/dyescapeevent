@@ -17,7 +17,7 @@ var countdownfunction = setInterval(function() {
 
 
   if (distance <= 216000 && !play) {
-  	document.getElementById("music").innerHTML = "<audio autoplay>  <source src='music/ost.mp3' type='audio/mp3'> Your browser does not support the audio element. </audio>";
+  	document.getElementById("music").innerHTML = "<audio autoplay>  <source src='music/ost.mp3' type='audio/mpeg'> Your browser does not support the audio element. </audio>";
   	play = true;
   }
 
