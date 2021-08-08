@@ -1,16 +1,22 @@
 
-var activateTimer = false;
+var activateTimer = true;
 if (activateTimer) {
 var distance = 1200000000;
 var check = false;
+var play = false;
 // Set the date we're counting down to
-var end = new Date(Date.UTC(2021, 07, 07, 18, 30, 00, 00)).getTime();
+var end = new Date(Date.UTC(2021, 07, 08, 18, 30, 00, 00)).getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
 	if (distance <= 120000 && !check) {
   	document.getElementById("rick").innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/dQw4w9WgXcQ' title='ÝouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
   	check = true;
+  }
+
+
+  if (distance <= 216000 && !play) {
+  	document.getElementById("music").innerHTML = "<audio autoplay>  <source src='horse.ogg' type='audio/ogg'>  <source src='horse.mp3' type='audio/mpeg'> Your browser does not support the audio element. </audio>"
   }
 
   // Get todays date and time
