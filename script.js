@@ -18,6 +18,7 @@ var countdownfunction = setInterval(function() {
 
   if (distance <= 216000 && !play) {
   	var ost = new Audio('music/ost.mp3');
+  	ost.muted = true;
   	window.onload = ost.play();
   	play = true;
   }
