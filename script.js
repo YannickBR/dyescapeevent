@@ -1,5 +1,8 @@
-	var distance = 1200000000;
-	var check = false;
+
+var activateTimer = false;
+if (activateTimer) {
+var distance = 1200000000;
+var check = false;
 // Set the date we're counting down to
 var end = new Date(Date.UTC(2021, 07, 07, 18, 30, 00, 00)).getTime();
 
@@ -322,4 +325,5 @@ canvas.addEventListener( 'mouseup', function( e ) {
 
 // once the window loads, we are ready for some fireworks!
 window.onload = loop;
+}
 
