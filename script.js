@@ -6,7 +6,7 @@ var distance = 1200000000;
 var check = false;
 var play = false;
 // Set the date we're counting down to
-var end = new Date(Date.UTC(2021, 07, 08, 13, 24, 00, 00)).getTime();
+var end = new Date(Date.UTC(2021, 07, 08, 13, 27, 00, 00)).getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -21,7 +21,7 @@ var countdownfunction = setInterval(function() {
   	ost.muted = true;
   	document.body.addEventListener("mousemove", function () {
   	play = true;
-    audio.play()
+    ost.play()
 	})
   }
 
