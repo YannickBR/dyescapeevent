@@ -5,6 +5,11 @@ if (activateTimer) {
 var distance = 1200000000;
 var check = false;
 var play = false;
+var stream = false;
+var doFireworks = false;
+
+
+
 // Set the date we're counting down to
 var end = new Date(Date.UTC(2021, 07, 12, 19, 00, 00, 00)).getTime();
 
@@ -13,6 +18,15 @@ var countdownfunction = setInterval(function() {
 	if (distance <= 120000 && !check && lok) {
   	document.getElementById("rick").innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/dQw4w9WgXcQ' title='ÝouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
   	check = true;
+  }
+
+  if (distance <= 1800000 && !stream) {
+  		document.getElementById("twitch").style.display = "block";
+  		stream = true;
+  	} else {
+  		if (!stream) {
+  		document.getElementById("twitch").style.display = "none";
+  	}
   }
 
 
@@ -46,12 +60,12 @@ var countdownfunction = setInterval(function() {
   }
 
 
-  	var c = document.getElementById("canvas");
-  if (distance < 600000) {
-  		c.style.display = "block";
-  } else {
-  	c.style.display = "none";
-  }
+  // 	var c = document.getElementById("canvas");
+  // if (distance < 600000) {
+  // 		c.style.display = "block";
+  // } else {
+  // 	c.style.display = "none";
+  // }
   // Output the result in an element with id="demo"
   document.getElementById("timer").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
@@ -62,7 +76,7 @@ var countdownfunction = setInterval(function() {
 
 
 
-
+if (doFireworks) {
 // when animating on canvas, it is best to use requestAnimationFrame instead of setTimeout or setInterval
 // not supported in all browsers though and sometimes needs a prefix, so we need a shim
 window.requestAnimFrame = ( function() {
@@ -338,5 +352,6 @@ canvas.addEventListener( 'mouseup', function( e ) {
 
 // once the window loads, we are ready for some fireworks!
 window.onload = loop;
+}
 }
 

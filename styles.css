@@ -6,20 +6,19 @@
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden;
 }
 
 iframe {
-	margin-right: auto;
-	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
-	
+  
 canvas {
-	margin: -35rem;
-	padding: 0;
-	cursor: crosshair;
-	display: none;
-	overflow: hidden;
+  margin-top: -35rem;
+  padding: 0;
+  cursor: crosshair;
+  display: none;
+  overflow: hidden;
 }
 
 body {
@@ -57,9 +56,66 @@ a#discord:hover {
     background-color: #4f5ce6;
 }
 
+
+.twitch .twitch-video {
+  padding-top: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.twitch .twitch-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 0;
+}
+.twitch .twitch-chat {
+  height: 400px;
+}
+
+.twitch {
+  width: 72vw;
+  margin: 3rem;
+}
+
+.twitch .twitch-chat iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (min-width: 500px) {
+
+  .twitch {
+    position: relative;
+  }
+
+  .twitch .twitch-video {
+    width: 75%;
+    padding-top: 42.1875%;
+  }
+
+  .twitch .twitch-chat {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+#container {
+  margin-top: 30vh;
+}
+#c {
+  margin-top: 10vh;
+  width: 100%;
+}
+
 @media only screen and (max-width: 500px) {
     img {
-        width: 95%;
+        width: 70%;
     }
 
     h1 {
@@ -69,4 +125,12 @@ a#discord:hover {
     h2 {
         font-size: 1.5em;
     }
+
+      #container {
+  margin-top: 45vh;
+  }
+  #c {
+    margin-bottom: 10vh;
+  }
+
 }
