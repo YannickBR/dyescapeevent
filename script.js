@@ -11,7 +11,7 @@ var doFireworks = false;
 
 
 // Set the date we're counting down to
-var end = new Date(Date.UTC(2021, 07, 12	, 18, 10, 00, 00)).getTime();
+var end = new Date(Date.UTC(2021, 07, 12, 19, 00, 00, 00)).getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
