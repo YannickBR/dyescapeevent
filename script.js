@@ -1,5 +1,5 @@
 
-var activateTimer = false;
+var activateTimer = true;
 var lok = false;
 if (activateTimer) {
 var distance = 1200000000;
