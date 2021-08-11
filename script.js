@@ -38,7 +38,6 @@ var countdownfunction = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   // If the count down is over, write some text 
-  console.log(distance);
 
   if (distance < 1) {
     clearInterval(countdownfunction);
