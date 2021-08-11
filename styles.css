@@ -106,7 +106,7 @@ a#discord:hover {
 }
 
 #container {
-  margin-top: 30vh;
+  margin-top: 40vh;
 }
 #c {
   margin-top: 10vh;
@@ -126,9 +126,6 @@ a#discord:hover {
         font-size: 1.5em;
     }
 
-      #container {
-  margin-top: 45vh;
-  }
   #c {
     margin-bottom: 10vh;
   }
