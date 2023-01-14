@@ -6,7 +6,7 @@ var distance = 1200000000;
 var check = false;
 var play = false;
 var stream = false;
-var doFireworks = false;
+var doFireworks = true;
 
 
 
